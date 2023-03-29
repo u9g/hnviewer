@@ -1,24 +1,8 @@
 global css details summary::-webkit-details-marker bg: none
 global css details > summary list-style: none
-# global css a@important c:cooler4
 
 def fixInnerHtml
 	$1..replace(/<pre>/, '<div style="background-color: tan;">')..replace /<\/pre>/, '</div>'
-
-# def fetchson url\string
-# 	const resp = await fetch($1)
-# 	if !response.ok {
-# 		throw new TypeError "Bad response status"
-# 	}
-
-# 	const cloned = response.clone()
-# 	cache.put(url, cloned)
-
-# 	return resp
-
-
-# 	fetch(url).then(do(response)
-# 		return 
 
 
 tag NewsComment
@@ -107,14 +91,5 @@ tag app
 						<button aria-label="Close">
 				<.window-body>
 					<NewsArticles.container.mx-auto[w:60%]>
-					# <menu role="tablist">
-# 			<div class="title-bar">
-#     <div class="title-bar-text">A Window With Tabs and Groups</div>
-#     <div class="title-bar-controls">
-#       <button aria-label="Minimize"></button>
-#       <button aria-label="Maximize"></button>
-#       <button aria-label="Close"></button>
-#     </div>
-#   </div>
 
 imba.mount <app>
